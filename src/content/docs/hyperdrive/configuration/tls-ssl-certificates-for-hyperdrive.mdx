@@ -12,7 +12,7 @@ import { TabItem, Tabs, Render, WranglerConfig, DashButton } from "~/components"
 Hyperdrive provides additional ways to secure connectivity to your database. Hyperdrive supports:
 
 1. **Server certificates** for TLS (SSL) modes such as `verify-ca` and `verify-full` for increased security. When configured, Hyperdrive will verify that the certificates have been signed by the expected certificate authority (CA) to avoid man-in-the-middle attacks.
-2. **Client certificates** for Hyperdrive to authenticate itself to your database with credentials beyond beyond username/password. To properly use client certificates, your database must be configured to verify the client certificates provided by a client, such as Hyperdrive, to allow access to the database.
+2. **Client certificates** for Hyperdrive to authenticate itself to your database with credentials beyond username/password. To properly use client certificates, your database must be configured to verify the client certificates provided by a client, such as Hyperdrive, to allow access to the database.
 
 Hyperdrive can be configured to use only server certificates, only client certificates, or both depending on your security requirements and database configurations.
 
@@ -159,4 +159,4 @@ When Hyperdrive connects to your database, it will provide a client certificate 
 
 Hyperdrive will attempt to connect to your database with the provided credentials to verify they are correct before creating a configuration. If you encounter an error when attempting to connect, refer to Hyperdrive's [troubleshooting documentation](/hyperdrive/observability/troubleshooting/) to debug possible causes.
 
-:::
+::: 
